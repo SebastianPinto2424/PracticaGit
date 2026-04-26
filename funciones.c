@@ -4,9 +4,16 @@ void saludo() {
     printf("Hola, bienvenido al programa de funciones en C.\n");
 }
 
+int sumar(int a, int b) {
+    return a + b;
+}
+
 int main() {
 
+    int num1=2, num2=3;
+
     saludo();
+    printf("Suma: %d + %d = %d\n", num1, num2, sumar(num1, num2));
 
     return 0;
 }
